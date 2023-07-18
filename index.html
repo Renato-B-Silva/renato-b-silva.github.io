@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+   
+    <header>
+      <a href="https://www.alura.com.br/">
+        <img
+          class="LogoAlura"
+          src="imagens/LogoAlura.png"
+          alt="Logo da ALura"
+        /></a>
+        <h1 class="title">Encriptador</h1>
+    </header>
+
+    <main>
+     
+      <section>
+        <textarea
+          class="text-area"
+          cols="50"
+          rows="7"
+          placeholder="digite o texto que voce deseja criptografar ou descriptografar"
+        ></textarea>
+
+        <div class="informacao">
+          <p>⚠️ Apenas letras minúsculas e sem acentos.</p>
+        </div>
+
+        <div class="buttons">
+          <button class="btnCriptografar" onclick= "btnCriptografar()">Criptografar</button>
+          <button class="btnDescriptografar" onclick= "btnDescriptografar()">Descriptografar</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="resposta">
+          <textarea class="mensagem" cols="36" rows="10" id="mensagem"></textarea>
+          <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <p id="txtFooter">Projeto desenvolvido durante a formação de Programador Júnior pelo Programa Oracle Next Education.</p>
+      <p id="txtFooter">Renato Batista da Silva</p>
+      <a href="https://www.linkedin.com/in/renatobs-183/"><img class="links" src="imagens/linkedin.png" alt="renato-b-silva"></img></a>
+      
+      <a href="https://github.com/Renato-B-Silva"><img class="links" src="imagens/github.png" alt="Renato-B-Silva"></img></a>
+     
+      <a href="mailto:contato.renatobatista13@gmail.com"><img class="links" src="imagens/gmail.png" alt="gmail"></img></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

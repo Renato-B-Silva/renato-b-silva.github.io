@@ -1,0 +1,322 @@
+* {
+  background-color: #e7ebee;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100%;
+}
+header {
+  padding-top: 10px;
+  background-image: linear-gradient(45deg, black, #0a3871, #0a3871, black);
+  display: flex;
+}
+a {
+  background-color: black;
+}
+.title {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.LogoAlura {
+  text-align: center;
+  width: 60px;
+  position: relative;
+  align-items: center;
+}
+main {
+  display: inline-flex;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.text-area {
+  border-radius: 15px;
+  color: #0a3871;
+  margin-top: 20px;
+  text-transform: lowercase;
+  text-align: center;
+}
+::placeholder {
+  color: #0a3871;
+}
+.text-area:focus {
+  outline: none;
+}
+
+.mensagem {
+  background-color: white;
+  background-image: url(imagens/boneco.png.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  border: none;
+  border-radius: 24px;
+  border-color: #0a3871;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-left: 60px;
+}
+.mensagem:focus {
+  outline: none;
+  background-image: none;
+}
+
+.informacao p {
+  font-size: 13px;
+  color: #0a3871;
+}
+.buttons {
+  display: flex;
+  margin-top: 18px;
+}
+.btnCriptografar {
+  margin-right: 30px;
+  border: 1px solid #0a3871;
+  border-radius: 15px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+.btnCriptografar:hover {
+  background-color: #0a3871;
+  color: white;
+  transition: 0.5s;
+}
+
+.btnDescriptografar {
+  border: 1px solid #0a3871;
+  border-radius: 15px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.btnDescriptografar:hover {
+  background-color: #0a3871;
+  color: white;
+  transition: 0.5s;
+}
+
+.resposta {
+  display: inline-flex;
+}
+.btnCopiar {
+  border: 1px solid #0a3871;
+  border-radius: 15px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 320px;
+}
+
+.btnCopiar:hover {
+  background-color: #0a3871;
+  color: white;
+  transition: 0.5s;
+}
+footer {
+  background-image: linear-gradient(45deg, black, #0a3871, #0a3871, black);
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  margin-bottom: 0px;
+  display: block;
+  bottom: 0px;
+}
+footer a {
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+#txtFooter {
+  font-size: 13px;
+  color: white;
+  background-color: transparent;
+}
+.links {
+  text-align: center;
+  background-color: transparent;
+  padding-top: 10px;
+  width: 40px;
+  height: 36px;
+}
+@media screen and (max-width: 1335px) {
+  .text-area {
+    width: 90%;
+    margin: 3%;
+  }
+  .mensagem {
+    width: 70%;
+  }
+  .btnCriptografar {
+    margin-left: 3%;
+    height: 50px;
+    width: 40%;
+    margin-bottom: 3%;
+  }
+  .btnDescriptografar {
+    margin-left: 3%;
+    height: 50px;
+    width: 40%;
+  }
+  .btnCopiar {
+    height: 50px;
+    width: 20%;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 330px;
+  }
+  footer {
+    display: block;
+    position: static;
+  }
+}
+@media screen and (max-width: 990px) {
+  * {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .LogoAlura {
+    width: 30px;
+  }
+  main {
+    display: block;
+    margin-left: 3%;
+  }
+  .text-area {
+    width: 90%;
+    margin: 3%;
+  }
+  .informacao p {
+    margin-left: 3%;
+    font-size: 10px;
+  }
+
+  .btnCriptografar {
+    margin-left: 3%;
+    height: 34px;
+    width: 164px;
+    margin-bottom: 3%;
+  }
+  .btnDescriptografar {
+    margin-left: 3%;
+    height: 34px;
+    width: 164px;
+  }
+  .resposta {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .mensagem {
+    width: 75%;
+    margin: 3%;
+    text-align: center;
+  }
+  .btnCopiar {
+    display: block;
+    height: 34px;
+    width: 164px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  .buttons {
+    display: block;
+  }
+  footer {
+    position: relative;
+  }
+  #txtFooter {
+    font-size: 7.5px;
+  }
+  .links {
+    text-align: center;
+    background-color: transparent;
+    padding-top: 10px;
+    width: 20px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 425px) {
+  * {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+  .LogoAlura {
+    width: 20px;
+  }
+  main {
+    display: block;
+  }
+  .text-area {
+    margin: 3%;
+  }
+  .informacao {
+    margin-left: 3%;
+  }
+
+  .btnCriptografar {
+    margin: 3%;
+    height: 34px;
+    width: 164px;
+  }
+  .btnDescriptografar {
+    margin: 3%;
+    height: 34px;
+    width: 164px;
+  }
+  .resposta {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .mensagem {
+    width: 60%;
+    margin: 6%;
+    margin-top: 3%;
+    margin-bottom: 0px;
+  }
+  .btnCopiar {
+    display: block;
+    height: 34px;
+    width: 164px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  footer {
+    position: relative;
+  }
+  #txtFooter {
+    font-size: 7.5px;
+  }
+  .links {
+    text-align: center;
+    background-color: transparent;
+    padding-top: 10px;
+    width: 20px;
+    height: 17px;
+  }
+}
